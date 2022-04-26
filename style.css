@@ -48,11 +48,11 @@ input {
   border: 1px solid #000;
   padding: 1%;
   border-radius: 7%;
-  background-color:rgb(141, 136, 136);
+  background-color: rgb(141, 136, 136);
 }
 
 #addBtn {
   color: white;
   padding: 2% 7%;
-  background-color:rgb(141, 136, 136);
+  background-color: rgb(141, 136, 136);
 }
