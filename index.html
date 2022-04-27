@@ -9,14 +9,24 @@
 </head>
 <body>
     <section id="MyBookLibrary">
-        <h1>Awesome Books</h1>
-        <div id="library"></div>
-    
-        <form id="libraryForm"><br>
-            <input id="title" type="text" placeholder="Title" required> <br><br> 
-            <input id="authors" type="text" placeholder="Author" required> <br><br>  
-            <button id="addBtn" type="submit">Add</button>
-        </form>
+        <h1>All Awesome Books</h1>
+        <div>
+        <table class="library">
+            <tbody id="library"></tbody>
+        </table>
+        </div>
+        <div>
+        <hr class="divide"> 
+            <div>
+                <form id="libraryForm">
+                    <h2>Add a New Book</h2>
+                    <div>
+                    <input id="title" type="text" placeholder="Title" required> <br><br> 
+                    <input id="authors" type="text" placeholder="Author" required> <br><br>  
+                    <button id="addBtn" type="submit">Add</button></div>
+                </form>
+            </div>
+        </div>
     </section>      
     <script src="library.js"></script>
 </body>
