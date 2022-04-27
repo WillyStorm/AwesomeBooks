@@ -9,10 +9,16 @@
 </head>
 <body>
     <section id="MyBookLibrary">
-        <h1>Awesome Books</h1>
-        <div id="library"></div>
-    
-        <form id="libraryForm"><br>
+        <h1>All awesome books</h1>
+        
+        <table class="library">
+            <tbody id="library"></tbody>
+            
+        </table>
+        
+        <form id="libraryForm" name="libraryForm" method="submit"><br>
+            <hr class="divide">
+            <h2>Add new book</h2>
             <input id="title" type="text" placeholder="Title" required> <br><br> 
             <input id="authors" type="text" placeholder="Author" required> <br><br>  
             <button id="addBtn" type="submit">Add</button>

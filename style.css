@@ -5,12 +5,21 @@ body {
   padding: 10px;
 }
 
+h1,
+h2 {
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 0;
+  margin: 1%;
+}
+
 h1 {
   font-size: 2vw;
 }
 
 #MyBookLibrary {
-  width: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -22,10 +31,22 @@ hr {
   width: 100%;
 }
 
+.divide {
+  border: 1px solid #000;
+  width: 25%;
+}
+
+.library {
+  width: 100%;
+  align-self: center;
+  border: 2px solid #000;
+  border-spacing: 0;
+}
+
 .libraryForm {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
 }
 
 #library {
@@ -33,16 +54,40 @@ hr {
 }
 
 form {
-  width: 60%;
+  width: 100%;
+}
+
+.table-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+tr:nth-child(odd) {
+  background-color: #d3d3d3;
+}
+
+tr {
+padding: 0;
+}
+
+.table-item > p {
+  padding: 0;
+  line-height: 0%;
+  margin-left: 3%;
 }
 
 input {
   width: 50%;
   padding: 5px;
   border: 1px solid grey;
+  align-items: center;
+  margin: auto;
+
 }
 
-#addBtnm,
+#addBtn,
 .remove {
   border: 1px solid #000;
   padding: 1%;
@@ -50,5 +95,9 @@ input {
 }
 
 #addBtn {
-  padding: 2% 7%;
+  padding: 1% 4%;
+}
+
+.remove {
+margin-right: 3%;
 }
