@@ -107,14 +107,14 @@ input {
 #addBtn {
   color: white;
   padding: 1% 2%;
-  background-color: rgb(47, 95, 255);
+
   margin-left: 20rem;
   border: 1px solid grey;
 }
 
 .remove {
   margin-right: 3%;
-  border: 2px solid rgb(54, 54, 54);
-  padding: 2% 7%;
+  border: 1px solid rgb(54, 54, 54);
+  padding: 0.6% 2%;
   background-color: rgb(141, 136, 136);
 }
