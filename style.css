@@ -106,8 +106,8 @@ input {
 #addBtn {
   color: white;
   padding: 1% 2%;
-
-  margin-left: 20rem;
+  font-size: 14px;
+  margin-left: 25rem;
   border: 1px solid grey;
 }
 
@@ -117,6 +117,7 @@ input {
   padding: 0.6% 2%;
   background-color: rgb(141, 136, 136);
 }
+
 .contact {
   display: none;
   flex-direction: column;
@@ -131,6 +132,8 @@ article {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 700px;
+  margin-left: 2.5rem;
 }
 
 .nav {
@@ -145,6 +148,8 @@ article {
 a {
   text-decoration: none;
   color: #000;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .hide {
@@ -155,6 +160,8 @@ footer {
   border: 2px solid #000;
   padding: 5px;
   margin-top: 5%;
+  width: 700px;
+  margin-left: 2.2rem;
 }
 
 .date {
