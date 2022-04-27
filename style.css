@@ -14,12 +14,17 @@ h2 {
 }
 
 h1 {
-  font-size: 2vw;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
 }
 
 #MyBookLibrary {
-  display: flex;
-  flex-direction: column;
+  width: 600px;
 }
 
 .title {
@@ -27,13 +32,14 @@ h1 {
 }
 
 hr {
-  border: 1px solid grey;
+  border: 1px solid rgb(87, 84, 84);
   width: 100%;
 }
 
 .divide {
   border: 1px solid #000;
   width: 25%;
+  align-items: center;
 }
 
 .library {
@@ -41,16 +47,23 @@ hr {
   align-self: center;
   border: 2px solid #000;
   border-spacing: 0;
+  margin: 2rem;
 }
 
-.libraryForm {
+#libraryForm {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
+  width: auto;
+  margin: 2rem;
 }
 
-#library {
-  font-size: 1vw;
+#libraryForm #title {
+  width: 100%;
+}
+
+#libraryForm #authors {
+  width: 100%;
 }
 
 form {
@@ -68,10 +81,6 @@ tr:nth-child(odd) {
   background-color: #d3d3d3;
 }
 
-tr {
-padding: 0;
-}
-
 .table-item > p {
   padding: 0;
   line-height: 0%;
@@ -84,7 +93,6 @@ input {
   border: 1px solid grey;
   align-items: center;
   margin: auto;
-
 }
 
 #addBtn,
@@ -95,9 +103,14 @@ input {
 }
 
 #addBtn {
-  padding: 1% 4%;
+  color: white;
+  padding: 1% 2%;
+  background-color: rgb(47, 95, 255);
+  margin-left: 20rem;
+  border: 1px solid grey;
 }
 
 .remove {
-margin-right: 3%;
+  margin-right: 3%;
+  border: 2px solid rgb(54, 54, 54);
 }

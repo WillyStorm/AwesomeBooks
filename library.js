@@ -1,9 +1,10 @@
+/* eslint-disable*/
 const title = document.getElementById('title');
 const authors = document.getElementById('authors');
 const libraryForm = document.getElementById('libraryForm');
 const allbooks = document.getElementById('library');
 
-class Book { 
+class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
@@ -34,7 +35,8 @@ class Libraryshelf {
       Libraryshelf.displayBook(book.title, book.author, book.id);
     });
   }
-    remove(button, key) {
+
+  remove(button, key) {
     button.addEventListener('click', () => {
       if (key === 0) {
         this.booksrecord.splice(key, key + 1);
@@ -46,10 +48,10 @@ class Libraryshelf {
       localStorage.setItem('bookArchive', JSON.stringify(this.booksrecord));
       window.location.reload();
       localStorage.setItem('bookArchive', JSON.stringify(this.booksrecord));
-      });
-    }
+    });
+  }
 
-    addBook() {
+  addBook() {
     libraryForm.addEventListener('submit', () => {
       const inputBook = new Book(title.value, authors.value);
       this.booksrecord.push(inputBook);
@@ -57,12 +59,12 @@ class Libraryshelf {
       title.value = '';
       authors.value = '';
       title.focus();
-      authors.focus(); 
+      authors.focus();
       Libraryshelf.getBooks();
-  });
+    });
 
-  localStorage.setItem('bookArchive', JSON.stringify(this.booksrecord));
-  Libraryshelf.getBooks();
+    localStorage.setItem('bookArchive', JSON.stringify(this.booksrecord));
+    Libraryshelf.getBooks();
   }
 }
 
@@ -71,5 +73,5 @@ keep.addBook();
 
 const removeAction = document.querySelectorAll('.remove');
 removeAction.forEach((btn, index) => {
-keep.remove(btn, index);
+  keep.remove(btn, index);
 });
